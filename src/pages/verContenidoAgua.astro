@@ -1,0 +1,92 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+		
+    <div class="bg-[url('/img/contenido/ver/1.png')] bg-[length:100%_100%] bg-center rounded-t-xl mx-auto my-8 h-40 w-[1150px] hover:scale-100 flex items-center justify-center"> </div>
+
+    <div class="grid grid-cols-4 gap-1 text-white w-full max-w-6xl mx-auto space-x-8 bg-[#9ae7fe] rounded-lg py-8">
+      <div class="py-8 bg-[#9ae7fe] w-[1150px]">
+        <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+        <div class="bg-white shadow-lg rounded-lg p-6 ">
+          <h2 class="text-3xl font-bold mb-2 text-[#9ae7fe]">Evaporación</h2>
+          <p class="text-gray-600 mb-4">El agua se calienta por el sol y se convierte en vapor que asciende hacia la atmósfera. </p>
+          <a href="#" class="bg-[#5dcee8] text-white py-2 px-4 rounded hover:bg-[#9ae7fe]">Ver más</a>
+        </div>
+
+        <div class="bg-white shadow-lg rounded-lg p-6">
+          <h2 class="text-3xl font-bold mb-2 text-[#9ae7fe]">Condensación</h2>
+          <p class="text-gray-600 mb-4">El vapor de agua se enfría y se convierte nuevamente en agua líquida, formando nubes.</p>
+          <a href="#" class="bg-[#5dcee8] text-white py-2 px-4 rounded hover:bg-[#9ae7fe]">Ver más</a>
+        </div>
+
+        <div class="bg-white shadow-lg rounded-lg p-6">
+          <h2 class="text-3xl font-bold mb-2 text-[#9ae7fe]">Precipitación</h2>
+          <p class="text-gray-600 mb-4">El agua condensada en las nubes cae hacia la Tierra en forma de lluvia, nieve o granizo.</p>
+          <a href="#" class="bg-[#5dcee8] text-white py-2 px-4 rounded hover:bg-[#9ae7fe]">Ver más</a>
+        </div>
+
+        <div class="bg-white shadow-lg rounded-lg p-6">
+          <h2 class="text-3xl font-bold mb-2 text-[#9ae7fe]">Escorrentía</h2>
+          <p class="text-gray-600 mb-4">El agua que cae sobre la tierra se desplaza hacia los ríos, lagos y océanos, completando el ciclo.</p>
+          <a href="#" class="bg-[#5dcee8] text-white py-2 px-4 rounded hover:bg-[#9ae7fe]">Ver más</a>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="max-w-6xl mx-auto px-4 mt-10">
+			<h2 class="text-3xl font-semibold mb-4 ">Actividades</h2>
+			<p class="text-lg text-gray-600 mb-6">Realiza estas actividades para comprender mejor cómo funciona el ciclo del agua.</p>
+    </div>
+    <div class="flex justify-between max-w-6xl mx-auto py-6 space-x-4">
+      <div class="flex-1 space-y-4">
+
+			<div class="bg-white border-2 border-[#9ae7fe] p-6 rounded-lg mb-4">
+			  <h3 class="text-xl font-semibold mb-2">Actividad 1: Mini Experimento de Evaporación</h3>
+			  <p class="text-gray-600 mb-4">Coloca agua en un recipiente y observa cómo se evapora con el calor. Registra las observaciones.</p>
+			  <a href="#" class="bg-[#5dcee8] text-white py-2 px-4 rounded hover:bg-[#9ae7fe]">Comenzar actividad</a>
+			</div>
+
+			<div class="bg-white border-2 border-[#9ae7fe] p-6 rounded-lg mb-4">
+			  <h3 class="text-xl font-semibold mb-2">Actividad 2: Creación de Nubes</h3>
+			  <p class="text-gray-600 mb-4">Realiza una actividad para observar cómo se forman las nubes mediante la condensación del vapor de agua.</p>
+			  <a href="#" class="bg-[#5dcee8] text-white py-2 px-4 rounded hover:bg-[#9ae7fe]">Comenzar actividad</a>
+			</div>
+
+			<div class="bg-white border-2 border-[#9ae7fe] p-6 rounded-lg mb-4">
+			  <h3 class="text-xl font-semibold mb-2">Actividad 3: Lluvia en Miniatura</h3>
+			  <p class="text-gray-600 mb-4">Simula la precipitación utilizando un vaso de agua y una bolsa plástica para ver cómo se forma la lluvia.</p>
+			  <a href="#" class="bg-[#5dcee8] text-white py-2 px-4 rounded hover:bg-[#9ae7fe]">Comenzar actividad</a>
+			</div>
+	
+      </div>
+
+      <div class="w-64 bg-[#daf2fa] rounded-lg p-4">
+        <h3 class="text-xl font-semibold mb-4">Recursos adicionales</h3>
+        <ul class="space-y-2">
+          <li><a href="#" class="text-[#1e579c] hover:underline">Infografía del Ciclo del Agua</a></li>
+          <li><a href="#" class="text-[#1e579c] hover:underline">Video sobre el ciclo del agua</a></li>
+          <li><a href="#" class="text-[#1e579c] hover:underline">Simulador interactivo del ciclo del agua</a></li>
+        </ul>
+    </div>
+  </div>
+	  </body>
+</html>
+

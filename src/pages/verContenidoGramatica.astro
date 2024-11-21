@@ -1,0 +1,104 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+    <body>
+        <!-- Encabezado con imagen -->
+        <div class="bg-[url('/img/contenido/ver/2.png')] bg-[length:100%_100%] bg-center rounded-t-xl mx-auto my-8 h-40 w-[1150px] hover:scale-100 flex items-center justify-center"></div>
+    
+        <!-- Sección principal del contenido -->
+        <div class="grid grid-cols-4 gap-1 text-white w-full max-w-6xl mx-auto space-x-8 bg-[#FFD8A9] rounded-lg py-8">
+          <div class="py-8 bg-[#FFD8A9] w-[1150px]">
+            <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+    
+              <!-- Tarjeta 1: Partes de la oración -->
+              <div class="bg-white shadow-lg rounded-lg p-6">
+                <h2 class="text-3xl font-bold mb-2 text-[#F4A261]">Partes de la oración</h2>
+                <p class="text-gray-600 mb-4">Descubre las diferentes partes de la oración como el sujeto, predicado y complementos, y su importancia en la estructura gramatical.</p>
+                <a href="#" class="bg-[#E76F51] text-white py-2 px-4 rounded hover:bg-[#F4A261]">Aprender más</a>
+              </div>
+    
+              <!-- Tarjeta 2: Tipos de oraciones -->
+              <div class="bg-white shadow-lg rounded-lg p-6">
+                <h2 class="text-3xl font-bold mb-2 text-[#F4A261]">Tipos de oraciones</h2>
+                <p class="text-gray-600 mb-4">Conoce los diferentes tipos de oraciones: simples, compuestas, afirmativas, negativas e interrogativas.</p>
+                <a href="#" class="bg-[#E76F51] text-white py-2 px-4 rounded hover:bg-[#F4A261]">Aprender más</a>
+              </div>
+    
+              <!-- Tarjeta 3: Reglas gramaticales -->
+              <div class="bg-white shadow-lg rounded-lg p-6">
+                <h2 class="text-3xl font-bold mb-2 text-[#F4A261]">Reglas gramaticales</h2>
+                <p class="text-gray-600 mb-4">Explora las reglas gramaticales esenciales, incluyendo el uso correcto de tiempos verbales y la concordancia.</p>
+                <a href="#" class="bg-[#E76F51] text-white py-2 px-4 rounded hover:bg-[#F4A261]">Aprender más</a>
+              </div>
+    
+              <!-- Tarjeta 4: Sintaxis y estilo -->
+              <div class="bg-white shadow-lg rounded-lg p-6">
+                <h2 class="text-3xl font-bold mb-2 text-[#F4A261]">Sintaxis y estilo</h2>
+                <p class="text-gray-600 mb-4">Aprende cómo construir oraciones claras y fluidas, respetando las normas de la sintaxis.</p>
+                <a href="#" class="bg-[#E76F51] text-white py-2 px-4 rounded hover:bg-[#F4A261]">Aprender más</a>
+              </div>
+    
+            </div>
+          </div>
+        </div>
+    
+        <!-- Sección de actividades -->
+        <div class="max-w-6xl mx-auto px-4 mt-10">
+          <h2 class="text-3xl font-semibold mb-4">Actividades</h2>
+          <p class="text-lg text-gray-600 mb-6">Realiza estas actividades interactivas para reforzar tu conocimiento de gramática y sintaxis.</p>
+        </div>
+    
+        <!-- Actividades y Recursos adicionales -->
+        <div class="flex justify-between max-w-6xl mx-auto py-6 space-x-4">
+          <div class="flex-1 space-y-4">
+    
+            <!-- Actividad 1 -->
+            <div class="bg-white border-2 border-[#F4A261] p-6 rounded-lg mb-4">
+              <h3 class="text-xl font-semibold mb-2">Actividad 1: Identifica el sujeto</h3>
+              <p class="text-gray-600 mb-4">Subraya el sujeto en las siguientes oraciones y verifica tus respuestas.</p>
+              <a href="#" class="bg-[#E76F51] text-white py-2 px-4 rounded hover:bg-[#F4A261]">Iniciar actividad</a>
+            </div>
+    
+            <!-- Actividad 2 -->
+            <div class="bg-white border-2 border-[#F4A261] p-6 rounded-lg mb-4">
+              <h3 class="text-xl font-semibold mb-2">Actividad 2: Construcción de oraciones</h3>
+              <p class="text-gray-600 mb-4">Practica creando oraciones complejas siguiendo las reglas de sintaxis.</p>
+              <a href="#" class="bg-[#E76F51] text-white py-2 px-4 rounded hover:bg-[#F4A261]">Iniciar actividad</a>
+            </div>
+    
+            <!-- Actividad 3 -->
+            <div class="bg-white border-2 border-[#F4A261] p-6 rounded-lg mb-4">
+              <h3 class="text-xl font-semibold mb-2">Actividad 3: Corrige errores</h3>
+              <p class="text-gray-600 mb-4">Identifica y corrige los errores gramaticales en los textos proporcionados.</p>
+              <a href="#" class="bg-[#E76F51] text-white py-2 px-4 rounded hover:bg-[#F4A261]">Iniciar actividad</a>
+            </div>
+    
+          </div>
+    
+          <!-- Recursos adicionales -->
+          <div class="w-64 bg-[#ffddc0] rounded-lg p-4">
+            <h3 class="text-xl font-semibold mb-4">Recursos adicionales</h3>
+            <ul class="space-y-2">
+              <li><a href="#" class="text-[#D55A3B] hover:underline">Guía de gramática básica</a></li>
+              <li><a href="#" class="text-[#D55A3B] hover:underline">Video sobre reglas gramaticales</a></li>
+              <li><a href="#" class="text-[#D55A3B] hover:underline">Ejercicios interactivos de sintaxis</a></li>
+            </ul>
+          </div>
+        </div>
+      </body>
+</html>

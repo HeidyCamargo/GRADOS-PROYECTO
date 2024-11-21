@@ -1,0 +1,59 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+    <body class="">
+        <div class="bg-[url('/img/contenido/1.png')] bg-[length:100%_100%] bg-center rounded-t-xl mx-auto my-8 h-40 w-[1150px] hover:scale-100 flex items-center justify-center">
+        
+        </div>
+        
+        
+        <div class="grid grid-cols-3 gap-2 text-white text-xl font-bold w-full max-w-6xl mx-auto space-x-8">
+          <div class="bg-[#ff3131] py-4 text-center rounded-lg transform transition duration-300 hover:scale-105 hover:border-4 hover:border-gray-300">Curso</div>
+          <div class="bg-[#ff3131] py-4 text-center rounded-lg transform transition duration-300 hover:scale-105 hover:border-4 hover:border-gray-300">Participantes</div>
+          <div class="bg-[#ff3131] py-4 text-center rounded-lg transform transition duration-300 hover:scale-105 hover:border-4 hover:border-gray-300">Calificaciones</div>
+        </div>
+    
+        <div class="flex justify-between max-w-6xl mx-auto py-6 space-x-4">
+          <div class="flex-1 space-y-4">
+            <div class="bg-white shadow-md rounded-lg p-6 transform transition duration-300 hover:scale-105 hover:border-4 hover:border-gray-300">
+              <h2 class="text-xl font-bold mb-2">Gramática y Sintaxis</h2>
+              <p class="text-gray-700 mb-4">Aprende sobre las reglas gramaticales y la correcta estructura de oraciones para mejorar tus habilidades comunicativas.</p>
+              <a href="/verContenidoGramatica"><button class="bg-[#ff3131] text-white px-4 py-2 rounded">Ver contenido</button></a>
+            </div>
+            <div class="bg-white shadow-md rounded-lg p-6 transform transition duration-300 hover:scale-105 hover:border-4 hover:border-gray-300">
+              <h2 class="text-xl font-bold mb-2">Figuras Literarias</h2>
+              <p class="text-gray-700 mb-4">Explora las diferentes figuras literarias y su uso para enriquecer textos y discursos.</p>
+              <button class="bg-[#ff3131] text-white px-4 py-2 rounded">Ver contenido</button>
+            </div>
+            <div class="bg-white shadow-md rounded-lg p-6 transform transition duration-300 hover:scale-105 hover:border-4 hover:border-gray-300">
+              <h2 class="text-xl font-bold mb-2">Redacción de Ensayos</h2>
+              <p class="text-gray-700 mb-4">Descubre técnicas y estrategias para redactar ensayos claros, estructurados y convincentes.</p>
+              <button class="bg-[#ff3131] text-white px-4 py-2 rounded">Ver contenido</button>
+            </div>
+          </div>
+    
+          <div class="w-64 bg-[#ffeaea] rounded-lg p-4">
+            <h3 class="text-lg font-bold mb-4">Recursos adicionales</h3>
+            <ul class="space-y-2">
+              <li><a href="#" class="text-[#971f1f] hover:underline">Manuales de Estilo</a></li>
+              <li><a href="#" class="text-[#971f1f] hover:underline">Plataformas de Lectura</a></li>
+              <li><a href="#" class="text-[#971f1f] hover:underline">Ejercicios Interactivos</a></li>
+            </ul>
+          </div>
+        </div>
+      </body>

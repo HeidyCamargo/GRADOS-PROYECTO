@@ -1,0 +1,59 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+    <body class="">
+        <div class="bg-[url('/img/contenido/4.png')] bg-[length:100%_100%] bg-center rounded-t-xl mx-auto my-8 h-40 w-[1150px] hover:scale-100 flex items-center justify-center">
+        
+        </div>
+        
+        
+        <div class="grid grid-cols-3 gap-2 text-white text-xl font-bold w-full max-w-6xl mx-auto space-x-8">
+          <div class="bg-[#ffec7c] py-4 text-center rounded-lg transform transition duration-300 hover:scale-105 hover:border-4 hover:border-gray-300">Curso</div>
+          <div class="bg-[#ffec7c] py-4 text-center rounded-lg transform transition duration-300 hover:scale-105 hover:border-4 hover:border-gray-300">Participantes</div>
+          <div class="bg-[#ffec7c] py-4 text-center rounded-lg transform transition duration-300 hover:scale-105 hover:border-4 hover:border-gray-300">Calificaciones</div>
+        </div>
+    
+        <div class="flex justify-between max-w-6xl mx-auto py-6 space-x-4">
+            <div class="flex-1 space-y-4">
+              <div class="bg-white shadow-md rounded-lg p-6 transform transition duration-300 hover:scale-105 hover:border-4 hover:border-gray-300">
+                <h2 class="text-xl font-bold mb-2">Revolución Industrial</h2>
+                <p class="text-gray-700 mb-4">Conoce el impacto de la Revolución Industrial en la sociedad, economía y tecnología a nivel global.</p>
+                <a href="/verContenidoRevolucion"><button class="bg-[#ffec7c] text-white px-4 py-2 rounded">Ver contenido</button></a>
+              </div>
+              <div class="bg-white shadow-md rounded-lg p-6 transform transition duration-300 hover:scale-105 hover:border-4 hover:border-gray-300">
+                <h2 class="text-xl font-bold mb-2">Culturas del Mundo</h2>
+                <p class="text-gray-700 mb-4">Explora las principales culturas a lo largo de la historia y cómo han contribuido a nuestra sociedad actual.</p>
+                <button class="bg-[#ffec7c] text-white px-4 py-2 rounded">Ver contenido</button>
+              </div>
+              <div class="bg-white shadow-md rounded-lg p-6 transform transition duration-300 hover:scale-105 hover:border-4 hover:border-gray-300">
+                <h2 class="text-xl font-bold mb-2">Gobierno y Democracia</h2>
+                <p class="text-gray-700 mb-4">Descubre el funcionamiento de los diferentes sistemas de gobierno y la evolución de la democracia.</p>
+                <button class="bg-[#ffec7c] text-white px-4 py-2 rounded">Ver contenido</button>
+              </div>
+            </div>
+      
+            <div class="w-64 bg-[#faf7e8] rounded-lg p-4">
+              <h3 class="text-lg font-bold mb-4">Recursos adicionales</h3>
+              <ul class="space-y-2">
+                <li><a href="#" class="text-[#463d0e] hover:underline">Atlas Históricos</a></li>
+                <li><a href="#" class="text-[#463d0e] hover:underline">Videos Educativos</a></li>
+                <li><a href="#" class="text-[#463d0e] hover:underline">Artículos y Documentos</a></li>
+              </ul>
+          </div>
+        </div>
+      </body>

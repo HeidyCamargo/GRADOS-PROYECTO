@@ -1,0 +1,95 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+		
+		<!-- Encabezado con imagen -->
+		<div class="bg-[url('/img/contenido/ver/3.png')] bg-[length:100%_100%] bg-center rounded-t-xl mx-auto my-8 h-40 w-[1150px] hover:scale-100 flex items-center justify-center"></div>
+
+		<!-- Sección principal -->
+		<div class="grid grid-cols-4 gap-1 text-white w-full max-w-6xl mx-auto space-x-8 bg-[#9cdbaf] rounded-lg py-8">
+			<div class="py-8 bg-[#9cdbaf] w-[1150px]">
+				<div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+					<!-- Conceptos principales -->
+					<div class="bg-white shadow-lg rounded-lg p-6">
+						<h2 class="text-3xl font-bold mb-2 text-[#4caf50]">Definición</h2>
+						<p class="text-gray-600 mb-4">Una ecuación lineal es aquella en la que las variables tienen exponente 1 y su gráfica es una línea recta.</p>
+						<a href="#" class="bg-[#81c784] text-white py-2 px-4 rounded hover:bg-[#a5d6a7]">Ver más</a>
+					</div>
+
+					<div class="bg-white shadow-lg rounded-lg p-6">
+						<h2 class="text-3xl font-bold mb-2 text-[#4caf50]">Estructura</h2>
+						<p class="text-gray-600 mb-4">Las ecuaciones lineales tienen la forma general <i>ax + b = c</i>, donde <i>a</i>, <i>b</i> y <i>c</i> son constantes.</p>
+						<a href="#" class="bg-[#81c784] text-white py-2 px-4 rounded hover:bg-[#a5d6a7]">Ver más</a>
+					</div>
+
+					<div class="bg-white shadow-lg rounded-lg p-6">
+						<h2 class="text-3xl font-bold mb-2 text-[#4caf50]">Resolución</h2>
+						<p class="text-gray-600 mb-4">Resolver una ecuación lineal implica despejar la incógnita para encontrar su valor.</p>
+						<a href="#" class="bg-[#81c784] text-white py-2 px-4 rounded hover:bg-[#a5d6a7]">Ver más</a>
+					</div>
+
+					<div class="bg-white shadow-lg rounded-lg p-6">
+						<h2 class="text-3xl font-bold mb-2 text-[#4caf50]">Aplicaciones</h2>
+						<p class="text-gray-600 mb-4">Las ecuaciones lineales son fundamentales en problemas cotidianos y científicos que involucran relaciones lineales.</p>
+						<a href="#" class="bg-[#81c784] text-white py-2 px-4 rounded hover:bg-[#a5d6a7]">Ver más</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Actividades -->
+		<div class="max-w-6xl mx-auto px-4 mt-10">
+			<h2 class="text-3xl font-semibold mb-4 text-[#4caf50]">Actividades</h2>
+			<p class="text-lg text-gray-600 mb-6">Practica la resolución de ecuaciones lineales con estos ejercicios interactivos.</p>
+		</div>
+
+		<div class="flex justify-between max-w-6xl mx-auto py-6 space-x-4">
+			<div class="flex-1 space-y-4">
+				<div class="bg-white border-2 border-[#4caf50] p-6 rounded-lg mb-4">
+					<h3 class="text-xl font-semibold mb-2">Actividad 1: Resuelve la ecuación</h3>
+					<p class="text-gray-600 mb-4">Resuelve la ecuación <i>3x + 5 = 14</i>. ¿Cuál es el valor de <i>x</i>? Introduce tus resultados en el espacio interactivo.</p>
+					<a href="#" class="bg-[#81c784] text-white py-2 px-4 rounded hover:bg-[#a5d6a7]">Comenzar actividad</a>
+				</div>
+
+				<div class="bg-white border-2 border-[#4caf50] p-6 rounded-lg mb-4">
+					<h3 class="text-xl font-semibold mb-2">Actividad 2: Representa gráficamente</h3>
+					<p class="text-gray-600 mb-4">Dibuja la gráfica de la ecuación <i>y = 2x + 3</i> en el plano cartesiano. Identifica su pendiente y su intersección.</p>
+					<a href="#" class="bg-[#81c784] text-white py-2 px-4 rounded hover:bg-[#a5d6a7]">Comenzar actividad</a>
+				</div>
+
+				<div class="bg-white border-2 border-[#4caf50] p-6 rounded-lg mb-4">
+					<h3 class="text-xl font-semibold mb-2">Actividad 3: Problema aplicado</h3>
+					<p class="text-gray-600 mb-4">Un tren recorre una distancia <i>d</i> en línea recta a una velocidad constante. Escribe la ecuación que relaciona distancia y tiempo.</p>
+					<a href="#" class="bg-[#81c784] text-white py-2 px-4 rounded hover:bg-[#a5d6a7]">Comenzar actividad</a>
+				</div>
+			</div>
+
+			<!-- Recursos adicionales -->
+			<div class="w-64 bg-[#e8f5e9] rounded-lg p-4">
+				<h3 class="text-xl font-semibold mb-4 text-[#388e3c]">Recursos adicionales</h3>
+				<ul class="space-y-2">
+					<li><a href="#" class="text-[#2e7d32] hover:underline">Guía completa de ecuaciones lineales</a></li>
+					<li><a href="#" class="text-[#2e7d32] hover:underline">Video explicativo de ecuaciones lineales</a></li>
+					<li><a href="#" class="text-[#2e7d32] hover:underline">Ejercicios interactivos</a></li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>
